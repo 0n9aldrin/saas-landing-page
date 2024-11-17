@@ -57,7 +57,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="bg-white py-24">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
@@ -77,9 +77,10 @@ export const Pricing = () => {
               features,
             }) => (
               <div
+                key={title}
                 className={twMerge(
                   "card",
-                  inverse === true && "border-black bg-black text-white"
+                  inverse === true && "bg-black border-black text-white"
                 )}
               >
                 <div className="flex justify-between">
@@ -99,11 +100,11 @@ export const Pricing = () => {
                         }}
                         transition={{
                           duration: 1,
-                          repeat: Infinity,
                           ease: "linear",
+                          repeat: Infinity,
                           repeatType: "loop",
                         }}
-                        className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+                        className="bg-[linear-gradient(to_right,#dd7ddf,#e1cd86,#bbcb92,#71c2ef,#3bffff,#dd7ddf,#e1cd86,#bbcb92,#71c2ef,#3bffff)] [background-size:200%] text-transparent bg-clip-text font-medium"
                       >
                         Popular
                       </motion.span>
@@ -128,7 +129,10 @@ export const Pricing = () => {
                 </button>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature) => (
-                    <li className="text-sm flex items-center gap-4">
+                    <li
+                      key={feature}
+                      className="text-sm flex items-center gap-4"
+                    >
                       <CheckIcon className="h-6 w-6" />
                       <span>{feature}</span>
                     </li>

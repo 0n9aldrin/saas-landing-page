@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import acmeLogo from "@/assets/logo-acme.png";
 import quantumLogo from "@/assets/logo-quantum.png";
 import echoLogo from "@/assets/logo-echo.png";
@@ -13,78 +13,74 @@ export const LogoTicker = () => {
     <div className="py-8 md:py-12 bg-white">
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-          <motion.div
-            className="flex gap-14 flex-none pr-14"
-            animate={{
-              translateX: "-50%",
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear",
-              repeatType: "loop",
-            }}
-          >
+          <motion.div className="flex gap-14 flex-none pr-14"
+          animate={{
+            translateX: "-50%",
+          }}
+          transition={{
+            duration: 20,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "loop",
+          }}>
             <Image
               src={acmeLogo}
-              alt="Acme Logo"
+              alt="Acme logo"
               className="logo-ticker-image"
             />
             <Image
               src={quantumLogo}
-              alt="Quantum Logo"
+              alt="Quantum logo"
               className="logo-ticker-image"
             />
             <Image
               src={echoLogo}
-              alt="Echo Logo"
+              alt="Echo logo"
               className="logo-ticker-image"
             />
             <Image
               src={celestialLogo}
-              alt="Celestial Logo"
+              alt="Celestial logo"
               className="logo-ticker-image"
             />
             <Image
               src={pulseLogo}
-              alt="Pulse Logo"
+              alt="Pulse logo"
               className="logo-ticker-image"
             />
             <Image
               src={apexLogo}
-              alt="Apex Logo"
+              alt="Apex logo"
               className="logo-ticker-image"
             />
-
-            {/* Second set of logos for animation */}
             <Image
               src={acmeLogo}
-              alt="Acme Logo"
+              alt="Acme logo"
               className="logo-ticker-image"
             />
             <Image
               src={quantumLogo}
-              alt="Quantum Logo"
+              alt="Quantum logo"
               className="logo-ticker-image"
             />
             <Image
               src={echoLogo}
-              alt="Echo Logo"
+              alt="Echo logo"
               className="logo-ticker-image"
             />
             <Image
               src={celestialLogo}
-              alt="Celestial Logo"
+              alt="Celestial logo"
               className="logo-ticker-image"
             />
             <Image
               src={pulseLogo}
-              alt="Pulse Logo"
+              alt="Pulse logo"
               className="logo-ticker-image"
             />
             <Image
               src={apexLogo}
-              alt="Apex Logo"
+              alt="Apex logo"
               className="logo-ticker-image"
             />
           </motion.div>

@@ -1,7 +1,7 @@
 "use client";
-import productImage from "@/assets/product-image.png";
-import pyramidImage from "@/assets/pyramid.png";
-import tubeImage from "@/assets/tube.png";
+import ProductImage from "@/assets/product-image.png";
+import PyramidImage from "@/assets/pyramid.png";
+import TubeImage from "@/assets/tube.png";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -27,31 +27,27 @@ export const ProductShowcase = () => {
             A more effective way to track progress
           </h2>
           <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, responsive,
-            SaaS website in just minutes with this template.
+            Celebrate the joy of accomplishment with an app designed to track
+            your progress and motivate your efforts.
           </p>
         </div>
         <div className="relative">
-          <Image src={productImage} alt="Product Image" className="mt-10" />
+          <Image src={ProductImage} alt="Product image" className="mt-10" />
           <motion.img
-            src={pyramidImage.src}
-            alt="Pyramid Image"
-            height={262}
+            src={PyramidImage.src}
+            alt="Pyramid image"
             width={262}
+            height={262}
             className="hidden md:block absolute -right-36 -top-32"
-            style={{
-              translateY,
-            }}
+            style={{ translateY: translateY }}
           />
           <motion.img
-            src={tubeImage.src}
+            src={TubeImage.src}
             alt="Tube image"
             height={248}
             width={248}
-            className="hidden md:block absolute bottom-24 -left-36"
-            style={{
-              translateY,
-            }}
+            className="hidden md:block absolute -left-36 bottom-24"
+            style={{ translateY: translateY }}
           />
         </div>
       </div>

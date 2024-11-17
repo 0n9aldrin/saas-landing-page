@@ -8,10 +8,10 @@ import SocialYoutube from "@/assets/social-youtube.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black text-[#BCBCBC] text-sm py-10 text-center">
+    <footer className="bg-black text-sm text-[#bcbcbc] py-10 text-center">
       <div className="container">
-        <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:w-full before:blur before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute">
-          <Image src={logo} height={40} alt="SaaS logo" className="relative" />
+        <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:h-full before:blur before:w-full before:bg-[linear-gradient(to_right,#f878ff,#fb92cf,#ffdd9b,#c2f0b1,#2fd8fe)] before:absolute">
+          <Image src={logo} alt="Saas Logo" height={40} className="relative" />
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
           <a href="#">About</a>
