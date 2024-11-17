@@ -2,16 +2,19 @@
   "name": "light-saas-landing-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://0n9aldrin.github.io/saas-landing-page/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.14",
-    "next": "14.2.4",
+    "next": "^14.2.18",
     "react": "^18",
     "react-dom": "^18"
   },
